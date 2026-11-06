@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin sign in · SkyWorld Stall</title>
+  <link rel="icon" href="../logo.png">
+  <script src="../config.js"></script>
+  <script src="../shared/theme.js"></script>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body class="portal-body">
+  <header class="portal-top">
+    <a class="portal-brand" href="./">
+      <img src="logo.png" alt="">
+      <span><span class="pb-name">SkyWorld</span><span class="pb-sub">Admin portal</span></span>
+    </a>
+    <span class="spacer"></span>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch colour theme">
+      <svg class="ic ic-moon" aria-hidden="true"><use href="../shared/icons.svg#i-moon"></use></svg>
+      <svg class="ic ic-sun" aria-hidden="true"><use href="../shared/icons.svg#i-sun"></use></svg>
+    </button>
+  </header>
+  <main class="portal-wrap">
+    <section class="portal-hero portal-hero-brand">
+      <div class="hero-brand-block">
+        <img src="logo.png" alt="" class="hero-logo">
+        <h1 class="hero-brand-title">Administrator</h1>
+      </div>
+    </section>
+    <section class="portal-panel" aria-live="polite">
+      <div class="auth-card" id="authCard">
+        <div class="loading-block"><span class="spinner"></span>Preparing the portal…</div>
+      </div>
+      <p class="portal-note"><span id="providerNote">Checking delivery configuration…</span></p>
+    </section>
+  </main>
+  <script src="../shared/api.js"></script>
+  <script src="../shared/ui.js"></script>
+  <script src="portal.js"></script>
+</body>
+</html>
